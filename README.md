@@ -19,12 +19,14 @@ Then an executable file named *combineSomGerm* will appear
 ## Usage
 
 To compute the root-mean-square difference between two symmetric distance matrices:
+
 Syntax:
 ```
 ./cmpMatrix [dist matrix 1] [dist matrix 2]
 ```
 
 To reorder and output the first distance matrix as the order in the second distrance matrix:
+
 Syntax:
 ```
 ./cmpMatrix [dist matrix 1] [dist matrix 2] -reorder > [out file]
