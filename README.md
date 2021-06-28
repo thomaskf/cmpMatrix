@@ -9,8 +9,8 @@ to have C++ compiler installed in the machine in order to compile the source cod
 steps are shown as follows:
 
 ```
-tar -zxvf cmpMatrix-1.0.tar.gz
-cd cmpMatrix-1.0
+tar -zxvf cmpMatrix-1.X.tar.gz
+cd cmpMatrix-1.X
 make
 ```
 
