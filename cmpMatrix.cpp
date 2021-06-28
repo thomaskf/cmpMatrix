@@ -52,9 +52,8 @@ double square_diff(double n1, double n2) {
 
 int main(int argc, char** argv) {
 
-	cout << "Version " << VERSION << endl;
-
 	if (argc < 3) {
+		cout << "Version " << VERSION << endl;
 		cout << "To compute the root-mean-square difference between two symmetric distance matrices:" << endl;
 		cout << "Syntax: " << argv[0] << " [dist matrix 1] [dist matrix 2]" << endl << endl;
 		cout << "To reorder and output the first distance matrix as the order in the second distrance matrix:" << endl;
