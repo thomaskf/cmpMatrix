@@ -7,7 +7,7 @@
 #include <cmath>
 #include <iomanip>
 
-#define VERSION "1.0"
+#define VERSION "1.1"
 
 using namespace std;
 
@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
 	long dim = 0;
 	long dim2 = 0;
 	long arraySize;
-	double* disMat;
+	float* disMat = NULL;
 	map<string,long> str2idx;
 	map<string,long>::iterator itr;
 	pair<map<string,long>::iterator,bool> ret;
@@ -103,7 +103,7 @@ int main(int argc, char** argv) {
 
 	// allocate memory to the array
 	arraySize = dim * (dim-1) / 2;
-	disMat = new double[arraySize];
+	disMat = new float[arraySize];
 
 	// read the content of the first distance-matrix file
 	lineno=0;
@@ -207,4 +207,9 @@ int main(int argc, char** argv) {
 	// output the root-mean-square value
 	rms = sqrt( rms / (double)nVal );
 	cout <<  setprecision(7) << "The root-mean-square difference is: " << rms << endl;
+
+	// release the memory
+	if (disMat != NULL) {
+		delete[] disMat;
+	}
 }
